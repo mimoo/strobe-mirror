@@ -10,7 +10,7 @@ ARMTARGET= -mcpu=cortex-m4 -mthumb -DSTROBE_SINGLE_THREAD=1
 
 .PHONY: all todo clean size-arm test-arm test-native test-strobe test-connection
 
-all: build/x25519.arm.o build/strobe.arm.o build/test_x25519 build/test_x25519.arm build/test_strobe
+all: build/test_x25519 build/test_x25519.arm build/test_strobe
 
 build/timestamp:
 	mkdir build
